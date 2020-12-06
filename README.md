@@ -16,7 +16,7 @@ You need to install discord.js in this directory by typing 'npm install discord.
 You also need to add a config.json file which contains the token and prefix, like this:
 
 {
-	"token": ""
+	"token": "(place your bot's token here)"
 }
 
 The bot can be run by locating the directory and typing 'node .'
