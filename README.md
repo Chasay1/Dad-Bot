@@ -1,7 +1,7 @@
 # Dad Bot
 Makes dad jokes
 
-That's all it does
+That's all it does.
 It's not very useful...
 
 The prefix is 'dad'
