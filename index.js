@@ -17,7 +17,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const { token } = require('./config.json');
-const jokes = require('./jokes.json');
+const { jokes } = require('./jokes.json');
 const prefix1 = "i'm";
 const prefix2 = 'im';
 function getRandomInt(max) {
