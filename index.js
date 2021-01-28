@@ -31,7 +31,7 @@ client.once('ready', () => {
 client.on('message', message => {
 	var args = message.content.trim().split(/ +/);
 	if (args.slice(0, 2).join(' ').toLowerCase() === 'dad jokes') {
-		const newJoke = getRandomInt(19);
+		const newJoke = getRandomInt(30);
 		console.log(newJoke);
 		message.channel.send(jokes[newJoke]);
 	}
