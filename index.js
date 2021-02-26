@@ -29,7 +29,7 @@ client.once('ready', () => {
 });
 
 client.on('message', message => {
-	if (!message.content.toLowerCase().startsWith(prefix1) && !message.content.toLowerCase().startsWith(prefix2) || message.author.bot || !message.guild) return;
+	if (message.author.bot || !message.guild) return;
 	var args = message.content.trim().split(/ +/);
 	if (args.slice(0, 2).join(' ').toLowerCase() === 'dad jokes') {
 		const newJoke = getRandomInt(30);
@@ -38,6 +38,7 @@ client.on('message', message => {
 	}
 	args.splice(0, 1);
 	const newMessage = args.join(' ');
+	if (!message.content.toLowerCase().startsWith(prefix1) && !message.content.toLowerCase().startsWith(prefix2)) return;
 	message.channel.send(`Hi ${newMessage}, I'm Dad!`);
 });
 client.login(token);
